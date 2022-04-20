@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 
-@app.route('/main', methods=['GET'])
+@app.route('/', methods=['GET'])
 def main():
     if request.method == 'GET':
         df = pd.read_csv("features_30_sec.csv")
